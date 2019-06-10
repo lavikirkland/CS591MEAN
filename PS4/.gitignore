@@ -35,9 +35,8 @@ build/Release
 # Dependency directories
 node_modules/
 jspm_packages/
-configs/
 
-# TypeScript v1 declaration files
+# Typescript v1 declaration files
 typings/
 
 # Optional npm cache directory
