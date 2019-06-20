@@ -1,0 +1,8 @@
+extends layout
+
+block content
+    h1 Definition for #{w}
+    each entry in arr
+        li #{entry.fl}.
+        each def in entry.shortdef
+            ul #{def}

@@ -1,0 +1,39 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    {{ title }}
+  </h1>
+</div>
+
+<h2 class="subtitle"> Words of the day </h2>
+<label>Word:
+  <input type="text" [formControl]="word">
+</label>
+<button (click)="query(word.value)">query</button>
+<div *ngIf="wordmeta">
+  <h2>{{wordmeta.w}} {{wordmeta.arr}}</h2>
+</div>
+<!--
+
+<ul class="words">
+  <li *ngFor="let word of words"
+  [class.selected]="word === selectedWord"
+  (click)="onSelect(word)">
+    <span class="badge">{{word.id}}</span>
+  </li>
+</ul>
+<div *ngIf="selectedWord" class="detail">
+ 
+  <h2>{{selectedWord.id}} Definition</h2>
+  <div><span>fl. </span>{{selectedWord.fl}}</div>
+  <div><span>definition: </span>{{selectedWord.shortdef}}</div>
+  <div>
+    <label>edit:
+      <input [(ngModel)]="selectedWord.id" placeholder="id"/>
+    </label>
+  </div>
+ 
+</div>
+-->
+
+<router-outlet></router-outlet>
